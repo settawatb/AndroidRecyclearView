@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        // image
+        <ImageView
+            android:id="@+id/sportsImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"/>
+        // Title
+        <TextView
+            android:id="@+id/title"
+            style="@style/SportsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_alignTop="@id/sportsImage"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:text="@string/title_placeholder" />
+
+        // จังหวัด
+        <TextView
+            android:id="@+id/province"
+            style="@style/SportsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_alignBottom="@id/sportsImage"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:text="จังหวัด" />
+
+        // สถานที่จัดงาน
+        <TextView
+            android:id="@+id/place"
+            style="@style/SportsDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sportsImage"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:text="สถานที่จัดงาน" />
+
+        // ช่วงเวลาจัดงาน
+        <TextView
+            android:id="@+id/periodTitle"
+            style="@style/SportsDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:text="ช่วงเวลาจัดงาน" />
+
+        // รายละเอียดเกี่ยวกับงาน (C)
+        <TextView
+            android:id="@+id/newsTitle"
+            style="@style/SportsDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/periodTitle"
+            android:textColor="?android:textColorSecondary"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:text="@string/news_placeholder" />
+
+        // รายละเอียดสั้น
+        <TextView
+            android:id="@+id/info"
+            style="@style/SportsDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsTitle"
+            android:padding="8dp"
+            android:text="รายละเอียดสั้น" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
